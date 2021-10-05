@@ -17,7 +17,7 @@ public partial class _Default : Page
     {
        string connStr = ConfigurationManager.ConnectionStrings["DefaultConnection"].ToString();
         DataSet ds = new DataSet();
-        ds = SqlHelper.ExecuteDataset(connStr, System.Data.CommandType.Text, "SELECT TOP 1 * FROM AspNetRoles WHERE Id=" + "1");
+        ds = SqlHelper.ExecuteDataset(connStr, System.Data.CommandType.Text, "SELECT TOP 1 * FROM AspNetRoles WHERE Id=" + txt.Text);
 
         foreach (DataRow row in ds.Tables[0].Rows)
         {

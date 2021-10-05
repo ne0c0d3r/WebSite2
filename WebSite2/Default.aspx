@@ -40,5 +40,6 @@
         </div>
     </div>
     <br />
+    <asp:TextBox runat="server" id="txt" ></asp:TextBox>
     <asp:Label runat="server" ID="lbl"></asp:Label>
 </asp:Content>
