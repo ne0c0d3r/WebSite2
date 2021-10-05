@@ -7,6 +7,9 @@ using System.Web.UI.WebControls;
 using Microsoft.ApplicationBlocks.Data;
 using System.Configuration;
 using System.Data;
+using Microsoft.AspNet.Identity;
+using Microsoft.Owin.Security;
+using WebSite2;
 
 public partial class _Default : Page
 {
@@ -21,5 +24,7 @@ public partial class _Default : Page
             lbl.Text = row["Name"].ToString();
 
         }
+
+        IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
     }
 }
