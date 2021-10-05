@@ -35,7 +35,10 @@
             </p>
             <p>
                 <a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301950">Learn more &raquo;</a>
+
             </p>
         </div>
     </div>
+    <br />
+    <asp:Label runat="server" ID="lbl"></asp:Label>
 </asp:Content>
